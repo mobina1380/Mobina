@@ -23,6 +23,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/js/animate/animate.min.css" rel="stylesheet">
   <script src="assets/js/wow/wow.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="assets/js/animate.js" defer></script>
@@ -46,6 +47,30 @@
     margin-top: 50px;
   }
  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    margin-left: 10%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px 4px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover{
+    cursor: pointer;
+  }
 </style>
 </head>
 
@@ -76,9 +101,21 @@
       <h1>Mobina Esmaeili</h1>
       <h2> web developer</h2>
       <p id="demome"></p>
-      <a href="assets/myresume.pdf" target="_blank" class="flex items-center download-cv cursor-pointer"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-10"><g clip-path="url(#clip0_75_184)"><path d="M27.7083 29.1667H8.74999C4.19178 29.1694 0.395041 25.6723 0.0238517 21.1292C-0.347338 16.5861 2.83138 12.5191 7.32957 11.7819C9.39998 8.11108 13.2856 5.83845 17.5 5.83324C20.1279 5.82331 22.6806 6.71022 24.7362 8.34749C26.7547 9.94854 28.1897 12.1697 28.8196 14.6679C32.5878 15.2469 35.2739 18.631 34.9825 22.4322C34.6912 26.2335 31.5207 29.1687 27.7083 29.1667ZM17.5 8.74998C14.3379 8.75372 11.4226 10.4593 9.86999 13.214L9.18749 14.4375L7.80353 14.6635C4.81436 15.1643 2.70667 17.8708 2.95342 20.8916C3.20018 23.9124 5.71917 26.241 8.74999 26.25H27.7083C29.9958 26.2524 31.899 24.4921 32.0749 22.2114C32.2508 19.9306 30.64 17.8994 28.3792 17.551L26.46 17.2594L25.9904 15.3752C25.021 11.4768 21.5171 8.74264 17.5 8.74998ZM17.5 23.3333L11.6667 17.5H15.3854V13.125H19.6146V17.5H23.3333L17.5 23.3333Z" fill="white"></path></g> <defs><clipPath id="clip0_75_184"><rect width="35" height="35" fill="white"></rect></clipPath></defs></svg>
-        Download CV
-      </a>
+
+        <hr>
+        <div class="dropdown">
+          <a class="flex items-center download-cv cursor-pointer"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-10"><g clip-path="url(#clip0_75_184)"><path d="M27.7083 29.1667H8.74999C4.19178 29.1694 0.395041 25.6723 0.0238517 21.1292C-0.347338 16.5861 2.83138 12.5191 7.32957 11.7819C9.39998 8.11108 13.2856 5.83845 17.5 5.83324C20.1279 5.82331 22.6806 6.71022 24.7362 8.34749C26.7547 9.94854 28.1897 12.1697 28.8196 14.6679C32.5878 15.2469 35.2739 18.631 34.9825 22.4322C34.6912 26.2335 31.5207 29.1687 27.7083 29.1667ZM17.5 8.74998C14.3379 8.75372 11.4226 10.4593 9.86999 13.214L9.18749 14.4375L7.80353 14.6635C4.81436 15.1643 2.70667 17.8708 2.95342 20.8916C3.20018 23.9124 5.71917 26.241 8.74999 26.25H27.7083C29.9958 26.2524 31.899 24.4921 32.0749 22.2114C32.2508 19.9306 30.64 17.8994 28.3792 17.551L26.46 17.2594L25.9904 15.3752C25.021 11.4768 21.5171 8.74264 17.5 8.74998ZM17.5 23.3333L11.6667 17.5H15.3854V13.125H19.6146V17.5H23.3333L17.5 23.3333Z" fill="white"></path></g> <defs><clipPath id="clip0_75_184"><rect width="35" height="35" fill="white"></rect></clipPath></defs></svg>
+            Download CV
+          </a>
+          <hr>
+          <div class="dropdown-content">
+            <p><a href="assets/myresume.pdf" target="_blank">Persian</a></p>
+            <hr>
+            <p><a href="assets/myresumeEnglish.pdf" target="_blank">English</a></p>
+          </div>
+        </div>
+
+
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
